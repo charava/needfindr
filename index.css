@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top:0%;
+  z-index:100;
+  left:100%;
+  background-color: white;
+  padding:40px;
+  justify-content:space-between;
+  width: 100%;
+}
+.main-link {
+  vertical-align:middle;
+  text-decoration: none;
+  font-size:180%;
+  font-weight:bolder;
+  color:black;
+}
+
+.linklist {
+  padding:0px;
+  list-style: none;
+  display:flex;
+  width:40%;
+  justify-content: space-between;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size:175%;
+  color:grey;
+}
+
+.container {
+  max-width:960px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right:15px;
+  padding-left:15px;
+  padding-top: 20px;
+}
+
+.note {
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius:10px;
+  padding: 2rem;
+  width:250px;
+  height:250px;
+  /*overflow:hidden;*/
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-title {
+  font-weight: bold;
+}
+.note-body {
+  /*figure out how to align to top*/
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes-list {
+  margin-top:-20%;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(
+		auto-fill,
+		minmax(250px, 1fr)
+	);
+}
+
+
+.addNote{
+  width: 30%;
+  border-radius:10px;
+  padding: 2rem;
+  justify-content: space-between;
+  background-color: #67d7cd;
+  position: sticky;
+  top:66%;
+  z-index:100;
+  left:100%;
+}
+
+.addNote-title {
+  font-weight:bold;
+  display:block;
+}
+
+.addNote-body {
+  display: block;
+}
+
+
+textarea {
+  border:none;
+  resize: none;
+  background-color: #67d7cd;
+  font-family: BlinkMacSystemFont;
+  width: 100%;
+}
+
+textarea:focus{
+  outline:none;
+}
+
+.save{
+  background-color: #e1e1e1;
+  border:none;
+  border-radius: 15px;
+  padding:5px 10px 5px 10px;
+
+}
+
+.save:hover{
+  background-color: white;
+  cursor:pointer;
+}
+
+
+.delete-icon:hover {
+  transform: scale(1.2);
+  align:left;
+
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
+}

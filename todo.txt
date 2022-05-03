@@ -1,0 +1,14 @@
+mount google colab to drive, sync to github, then connect to front end
+fix the dupe list issue in noteslist component
+fix delete functions for csv posts
+add overlay shadowbox thing for overlay = true
+
+add heart/favorite function
+
+
+fetch categories and regenerate csvs from text classification model
+eliminate empty posts
+load "needs" and "ideas" csv also (nav bar and seperate pages)
+
+
+add add a need, add persons email so they can contact them when it is fixed
